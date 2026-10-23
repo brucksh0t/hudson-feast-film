@@ -6,8 +6,8 @@
 <title>Feast &amp; Floret · regional Italian, a flower market and a hearth · Hudson, NY (film edition, concept)</title>
 <meta name="description" content="Italian-focused, Hudson-sourced dinner every night 5–10, lunch Fri–Sun 12–3, at 13 South 3rd Street, Hudson, NY. Unofficial concept preview.">
 <meta name="theme-color" content="#f4efe7">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500;600&display=swap">
+<link rel="preload" as="font" type="font/woff2" href="fonts/cormorant-garamond-italic-0.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/jost-normal-2.woff2" crossorigin>
 <link rel="preload" as="image" type="image/avif" href="img/hero-poster.avif" fetchpriority="high">
 <link rel="icon" href="img/favicon.png">
 <link rel="stylesheet" href="styles.css">
@@ -87,7 +87,7 @@ d.style.setProperty('--dpr',Math.max(1,window.devicePixelRatio||1));if(!r&&!/sta
           <li><span class="n">Panna cotta</span><span class="d">blueberry, citrus</span><span class="p">12</span></li></ul></div>
         <a class="ln ln--arrow" href="https://www.feastandfloret.com/menu/lunchanddinner">Full menu, drinks and wine list <span class="ar" aria-hidden="true">→</span></a>
       </div>
-      <figure class="frame clip frame--pasta"><video class="loop" muted playsinline loop preload="none" width="1056" height="704" poster="media/pasta-poster.webp" aria-label="Hands shaping fresh pasta, slow pan"><source src="media/pasta.mp4" type="video/mp4"><source src="media/pasta.webm" type="video/webm"></video><figcaption class="label">Photo: Feast &amp; Floret · slow pan</figcaption></figure>
+      <figure class="frame clip frame--pasta"><video class="loop" muted playsinline loop preload="none" width="1056" height="704" data-poster="media/pasta-poster.webp" aria-label="Hands shaping fresh pasta, slow pan"><source src="media/pasta.mp4" type="video/mp4"><source src="media/pasta.webm" type="video/webm"></video><figcaption class="label">Photo: Feast &amp; Floret · slow pan</figcaption></figure>
     </div>
   </div>
 </section>
@@ -114,9 +114,9 @@ d.style.setProperty('--dpr',Math.max(1,window.devicePixelRatio||1));if(!r&&!/sta
     </div>
     <div class="house__media frame">
       <picture class="shot is-on"><source type="image/avif" srcset="img/street.avif"><img src="img/street.webp" width="800" height="1200" loading="lazy" decoding="async" alt="The brick building on South Third Street"></picture>
-      <div class="shot"><video class="loop" muted playsinline loop preload="none" width="800" height="1064" poster="media/flowers-poster.webp" aria-label="A bouquet from the flower stall, slow push"><source src="media/flowers.mp4" type="video/mp4"><source src="media/flowers.webm" type="video/webm"></video></div>
-      <div class="shot"><video class="loop" muted playsinline loop preload="none" width="720" height="1080" poster="media/farm-poster.webp" aria-label="The flower field at the farm, slow push"><source src="media/farm.mp4" type="video/mp4"><source src="media/farm.webm" type="video/webm"></video></div>
-      <div class="shot"><video class="loop" muted playsinline loop preload="none" width="704" height="1056" poster="media/hearth-poster.webp" aria-label="The wood fire in the hearth, slow pan"><source src="media/hearth.mp4" type="video/mp4"><source src="media/hearth.webm" type="video/webm"></video></div>
+      <div class="shot"><video class="loop" muted playsinline loop preload="none" width="800" height="1064" data-poster="media/flowers-poster.webp" aria-label="A bouquet from the flower stall, slow push"><source src="media/flowers.mp4" type="video/mp4"><source src="media/flowers.webm" type="video/webm"></video></div>
+      <div class="shot"><video class="loop" muted playsinline loop preload="none" width="720" height="1080" data-poster="media/farm-poster.webp" aria-label="The flower field at the farm, slow push"><source src="media/farm.mp4" type="video/mp4"><source src="media/farm.webm" type="video/webm"></video></div>
+      <div class="shot"><video class="loop" muted playsinline loop preload="none" width="704" height="1056" data-poster="media/hearth-poster.webp" aria-label="The wood fire in the hearth, slow pan"><source src="media/hearth.mp4" type="video/mp4"><source src="media/hearth.webm" type="video/webm"></video></div>
       <span class="label">Photos: Feast &amp; Floret · slow camera moves</span>
     </div>
   </div>
@@ -156,7 +156,7 @@ d.style.setProperty('--dpr',Math.max(1,window.devicePixelRatio||1));if(!r&&!/sta
 
 <section class="groups sec" id="groups" aria-labelledby="groups-h">
   <div class="wrap groups__grid">
-    <figure class="frame clip frame--table"><video class="loop" muted playsinline loop preload="none" width="864" height="1080" poster="media/table-poster.webp" aria-label="A long table set for a group, slow push"><source src="media/table.mp4" type="video/mp4"><source src="media/table.webm" type="video/webm"></video><figcaption class="label">Photo: Feast &amp; Floret · slow push</figcaption></figure>
+    <figure class="frame clip frame--table"><video class="loop" muted playsinline loop preload="none" width="864" height="1080" data-poster="media/table-poster.webp" aria-label="A long table set for a group, slow push"><source src="media/table.mp4" type="video/mp4"><source src="media/table.webm" type="video/webm"></video><figcaption class="label">Photo: Feast &amp; Floret · slow push</figcaption></figure>
     <div><p class="kicker">Groups &amp; private dining</p><h2 id="groups-h" class="h2" data-split>Eight or more? A prix fixe feast.</h2>
       <p>Groups of eight and up dine family-style from a set menu. Small weddings and flower design classes can be arranged with the floral team.</p>
       <a class="ln ln--arrow" href="https://www.feastandfloret.com/private-dining">Ask about private dining <span class="ar" aria-hidden="true">→</span></a></div>
@@ -179,7 +179,7 @@ d.style.setProperty('--dpr',Math.max(1,window.devicePixelRatio||1));if(!r&&!/sta
         <tr data-d="5,6,0"><th scope="row">Fri–Sun</th><td>Lunch 12–3 pm · dinner 5–10 pm</td></tr></tbody></table>
       <address>13 South 3rd Street, Hudson, NY 12534<br><a class="ln" href="tel:+15188221500">(518) 822-1500</a></address>
       <div class="ctas"><a class="btn btn--primary" href="https://resy.com/cities/hudson-ny/venues/feast-and-floret">Find a table <span class="ar" aria-hidden="true">→</span></a><a class="btn btn--line" href="https://www.google.com/maps/dir/?api=1&amp;destination=Feast+%26+Floret%2C+13+S+3rd+St%2C+Hudson%2C+NY+12534">Directions</a></div></div>
-    <figure class="frame clip frame--court"><video class="loop" muted playsinline loop preload="none" width="720" height="1080" poster="media/courtyard-poster.webp" aria-label="The courtyard, slow push"><source src="media/courtyard.mp4" type="video/mp4"><source src="media/courtyard.webm" type="video/webm"></video><figcaption class="label">Photo: Feast &amp; Floret · slow push</figcaption></figure>
+    <figure class="frame clip frame--court"><video class="loop" muted playsinline loop preload="none" width="720" height="1080" data-poster="media/courtyard-poster.webp" aria-label="The courtyard, slow push"><source src="media/courtyard.mp4" type="video/mp4"><source src="media/courtyard.webm" type="video/webm"></video><figcaption class="label">Photo: Feast &amp; Floret · slow push</figcaption></figure>
   </div>
 </section>
 </main>

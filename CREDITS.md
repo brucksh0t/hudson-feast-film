@@ -25,4 +25,4 @@ Every photo was downloaded from feastandfloret.com (gallery, flowers and home pa
 - Reservations: Resy venue page (not the 2021-dated link on the current site). Flower shop: fandflowers.myshopify.com.
 
 ## Code and fonts
-GSAP 3.12.5 + ScrollTrigger (self-hosted, GreenSock standard license). Cormorant Garamond + Jost (Google Fonts, SIL OFL 1.1).
+GSAP 3.12.5 + ScrollTrigger (self-hosted, GreenSock standard license). Cormorant Garamond + Jost (self-hosted latin subsets from Google Fonts, SIL OFL 1.1).

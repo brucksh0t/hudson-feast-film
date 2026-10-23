@@ -14,6 +14,9 @@
   tabs.forEach(function(b,i){b.addEventListener('click',function(){sel(b);});b.addEventListener('keydown',function(e){var k=e.key,n=tabs.length,j=k==='ArrowRight'?(i+1)%n:k==='ArrowLeft'?(i-1+n)%n:k==='Home'?0:k==='End'?n-1:-1;if(j>=0){e.preventDefault();sel(tabs[j],true);}});});
   // loops play only on screen (and, in the house, only when their chapter is showing); saveData / reduced motion keep posters
   var vids=[].slice.call(document.querySelectorAll('video.loop'));
+  // video posters load on approach (or at once when the page is static), never in the first paint
+  function poster(v){if(v.dataset.poster&&!v.poster)v.poster=v.dataset.poster;}
+  if(!exp||!('IntersectionObserver' in window))vids.forEach(poster);else{var pio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){poster(e.target);pio.unobserve(e.target);}});},{rootMargin:'150% 0px'});vids.forEach(function(v){pio.observe(v);});}
   function playable(v){var s=v.closest('.shot');return !s||s.classList.contains('is-on')||s.dataset.on==='1';}
   var vis=new WeakMap();
   function sync(v){if(vis.get(v)&&playable(v)){if(v.preload!=='auto')v.preload='auto';var p=v.play();if(p&&p.catch)p.catch(function(){});}else v.pause();}

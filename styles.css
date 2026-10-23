@@ -94,7 +94,7 @@ a{color:inherit}
 .ch{display:grid;gap:4px;padding:16px 0;border-top:2px solid var(--ink);color:var(--muted);transition:color .3s}.ch b{font:600 .74rem/1 Jost;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}.ch strong{font:italic 600 1.45rem/1.2 'Cormorant Garamond',serif}
 .step strong{color:var(--ink)}
 .ch.is-on{color:var(--body)}.ch.is-on b{color:var(--red-d)}
-.house__media{width:min(100%,calc(720px / var(--dpr)),480px);aspect-ratio:2/3;justify-self:center;overflow:hidden}
+.house__media{width:min(100%,calc(704px / var(--dpr)),480px);aspect-ratio:2/3;justify-self:center;overflow:hidden}
 .house__media .shot{position:absolute;inset:0}.house__media .shot img,.house__media .shot video{width:100%;height:100%;object-fit:cover}
 .house__media .shot{clip-path:inset(0 0 100% 0)}.house__media .shot.is-on{clip-path:inset(0 0 0 0)}
 html:not(.exp) .house__media .shot{transition:none}

@@ -48,6 +48,8 @@
 }
 :root{--ink:#1a120e;--body:#2e241e;--muted:#5f5249;--paper:#f4efe7;--paper2:#e9e0d2;--red:#b8431f;--red-d:#9a3617;--white:#fff;
 --g:clamp(16px,5vw,64px);--top:64px;--dpr:1;--ease:cubic-bezier(.2,.7,.1,1)}
+/* no-JS: device-pixel default so 1.0x caps hold without the inline script */
+@media (min-resolution:1.01dppx){:root{--dpr:2}}@media (min-resolution:2.01dppx){:root{--dpr:3}}@media (min-resolution:3.01dppx){:root{--dpr:4}}html:not(.exp) .stage{max-width:calc(960px / var(--dpr))}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%;scroll-padding-top:var(--top)}
 body{margin:0;background:var(--paper);color:var(--body);font:400 17px/1.65 Jost,system-ui,sans-serif}
 img,video,canvas{display:block;max-width:100%}
